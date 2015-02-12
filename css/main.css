@@ -1,0 +1,52 @@
+
+ul#nav{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+
+ul#nav li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.listeleme {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ulasilamadi{
+    font-weight: bold;
+    font-size: large;
+}
+
+.arandi{
+    font-weight: bold;
+    font-size: large;
+}
+
+.tamamlandi{
+    font-weight: bold;
+    font-size: large;
+}
+
+.bigred {
+    background: #d9534f;
+    color: white !important;
+}
+
+.bigblue {
+    background: #428bca;
+    color: white !important;
+}
+
+.biggreen {
+    background: #5cb85c;
+    color: white !important;
+}
+
+.bigwhite {
+    background: white;
+    color: color !important;
+}
