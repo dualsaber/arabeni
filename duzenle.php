@@ -24,7 +24,6 @@ if($_POST){
 
     $isim = $_POST['isim'];
     $soyad = $_POST['soyad'];
-    $email = $_POST['email'];
     $telefon = $_POST['telefon'];
     $istek = $_POST['istek'];
     $ulasilamadi = $_POST['ulasilamadi'];
@@ -32,7 +31,7 @@ if($_POST){
     $tamamlandi = $_POST['tamamlandi'];
     $arsiv = $_POST['arsiv'];
     
-    $guncelle = mysql_query("UPDATE musteriler SET isim='$isim', soyad='$soyad', email='$email', telefon='$telefon', istek='$istek', ulasilamadi='$ulasilamadi', arandi='$arandi', tamamlandi='$tamamlandi', arsiv='$arsiv' WHERE id='$id'");
+    $guncelle = mysql_query("UPDATE musteriler SET isim='$isim', soyad='$soyad', telefon='$telefon', istek='$istek', ulasilamadi='$ulasilamadi', arandi='$arandi', tamamlandi='$tamamlandi', arsiv='$arsiv' WHERE id='$id'");
         
         if($guncelle){
         echo "<div class='container text-center alert alert-success' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>Halloldu!</div>";
@@ -50,7 +49,6 @@ extract($goster);
 echo '<div class="container"><form id="myForm" method="POST">
         İsim: <input type="text" name="isim" value="'.$isim.'" /><br>
         Soyad: <input type="text" name="soyad" value="'.$soyad.'" /><br>
-        Email: <input type="text" name="email" value="'.$email.'"><br>
         Telefon: <input type="text" name="telefon" value="'.$telefon.'"><br>
         İstek: <input type="text" name="istek" value="'.$istek.'"><br>
         Ulasilamadi: <select name="ulasilamadi">

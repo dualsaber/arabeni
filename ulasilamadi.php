@@ -10,7 +10,6 @@ $result= mysql_query("SELECT * FROM musteriler WHERE ulasilamadi=1");
             <strong>Soyad:</strong> {$row["soyad"]}<br />
             <strong>İstek:</strong> {$row["istek"]}<br />
             <strong>Telefon:</strong> {$row["telefon"]}<br />
-            <strong>Mail:</strong> {$row["email"]}<br />
             <strong>Tarih:</strong> {$row["tarih"]}<br /> ";
      
      echo "<a class='btn btn-info' href='duzenle.php?id={$row["id"]}'>Düzenle</a>  ";
