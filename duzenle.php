@@ -1,5 +1,5 @@
+<meta http-equiv="Content-Type" content="text/HTML" charset="utf-8" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-9">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
