@@ -27,7 +27,6 @@ $result= mysql_query("SELECT * FROM musteriler WHERE arsiv=0 ORDER BY id DESC");
             <strong>Soyad:</strong> {$row["soyad"]}<br />
             <strong>İstek:</strong> {$row["istek"]}<br />
             <strong>Telefon:</strong> {$row["telefon"]}<br />
-            <strong>Mail:</strong> {$row["email"]}<br />
             <strong>Tarih:</strong> {$row["tarih"]}<br />";
      
     if ($row["ulasilamadi"] == "1"){

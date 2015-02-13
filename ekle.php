@@ -8,9 +8,8 @@
     <form id="myForm" action="ekleme.php" method="POST">
         İsim: <input type="text" name="isim" /><br>
         Soyad: <input type="text" name="soyad" /><br>
-        Email: <input type="text" name="email"><br>
-        Telefon: <input type="text" name="telefon"><br>
         İstek: <input type="text" name="istek"><br>
+        Telefon: <input type="text" name="telefon"><br>
         <button id="sub">Ekle</button>  
     </form>
     

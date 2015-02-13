@@ -3,17 +3,16 @@
 
     $isim = $_POST['isim'];
     $soyad = $_POST['soyad'];
-    $email = $_POST['email'];
     $telefon = $_POST['telefon'];
     $istek = $_POST['istek'];
     $ulasilamadi = $_POST['ulasilamadi'];
-    $arandi = $_POST['ulasilamadi'];
-    $tamamlandi = $_POST['ulasilamadi'];
+    $arandi = $_POST['arandi'];
+    $tamamlandi = $_POST['tamamlandi'];
     $arsiv = $_POST['arsiv'];
     $tarih = date("d.m.y");
 
 
-    if(mysql_query("INSERT INTO musteriler VALUES('$id', '$isim', '$soyad', '$email', '$telefon', '$istek', '$tarih', '$ulasilamadi', '$tamamlandi', '$arandi', '$arsiv')")){
+    if(mysql_query("INSERT INTO musteriler VALUES('$id', '$isim', '$soyad', '$istek', '$telefon', '$tarih', '$ulasilamadi', '$tamamlandi', '$arandi', '$arsiv')")){
        echo "<div class='container text-center alert alert-success' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>Halloldu!</div>";
         //header("Refresh:2; url=index.php");
     }else{
