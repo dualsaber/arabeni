@@ -8,7 +8,7 @@ $bul = mysql_query("SELECT * FROM musteriler WHERE isim LIKE '%$kelime%' OR soya
 $toplam = mysql_num_rows($bul);
 
 if ($toplam > 0 ){
-    echo "<div class='bg-info text-center'> Toplam ".$toplam." sonuç bulundu.<br> <a class='btn btn-info' href='index.php'>Aramayı kapat</a></div>";
+    echo "<div class='bg-info text-center'> Toplam ".$toplam." sonuç bulundu.<br> <a class='btn btn-info' href='genel.php'>Aramayı kapat</a></div>";
     while ($goster = mysql_fetch_array($bul)){     
     echo "<div class='listeleme container'>
             <strong>İsim:</strong> {$goster["isim"]}<br />
@@ -48,17 +48,21 @@ if ($toplam > 0 ){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ara Beni! Alpha</title>
+    <title>Ara Beni! Alpha v0.1</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container"><ul id="nav"><li><a href="ekle" class="btn btn-warning">Ekle</a></li>
-        <li><a href="liste" class="btn btn-default">Hepsi</a></li>
-        <li><a href="ulasilamadi" class="btn btn-default">Ulaşılamadı</a></li>
-        <li><a href="arandi" class="btn btn-default">Arandı</a></li>
-        <li><a href="tamamlandi" class="btn btn-default">Tamamlandı</a></li>
-        <li><a href="arsiv" class="btn btn-default">Arşiv</a></li>
-        <li><form style="display: inline;" action="arama.php" method="post"><input type="text" name="kelime"><input type="submit" value="Ara"></form></li>
+    <div class="container center-block">
+      <a href="http://canagirkaya.com/arabeni/genel.php" class="btn btn-success"><span class="glyphicon glyphicon-refresh"></span></a>
+      <ul id="nav">
+       <li><a href="liste" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span></a></li>
+       <li><a href="ekle" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></a></li>
+        <li><a href="liste" class="btn btn-default">Hepsi <span class="badge"><?php echo $toplam; ?></span></a></li>
+        <li><a href="ulasilamadi" class="btn btn-default">Ulaşılamadı <span class="badge danger"><?php echo $toplam2; ?></span></a></li>
+        <li><a href="arandi" class="btn btn-default">Arandı <span class="badge"><?php echo $toplam3; ?></span></a></li>
+        <li><a href="tamamlandi" class="btn btn-default">Tamamlandı <span class="badge"><?php echo $toplam4; ?></span></a></li>
+        <li><a href="arsiv" class="btn btn-default">Arşiv <span class="badge"><?php echo $toplam5; ?></span></a></li>
+        <li><form style="display: inline;" action="arama.php" method="post" class="form-control"><input id="searchbar" name="kelime" placeholder="Ara..."><button class="btn btn-primary"type="submit" value="Ara">Ara</button></form></li>
     </ul>
     </div>
     <div class="container" id="content"></div>

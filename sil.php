@@ -26,8 +26,6 @@ $toplam5 = mysql_num_rows($result5);
 
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +35,9 @@ $toplam5 = mysql_num_rows($result5);
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container center-block"><ul id="nav">
+    <div class="container center-block">
+      <a href="http://canagirkaya.com/arabeni/genel.php" class="btn btn-success"><span class="glyphicon glyphicon-refresh"></span></a>
+      <ul id="nav">
        <li><a href="liste" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span></a></li>
        <li><a href="ekle" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></a></li>
         <li><a href="liste" class="btn btn-default">Hepsi <span class="badge"><?php echo $toplam; ?></span></a></li>

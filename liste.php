@@ -46,7 +46,7 @@ $result= mysql_query("SELECT * FROM musteriler WHERE arsiv=0 ORDER BY id DESC");
      
      echo "<a class='btn btn-info' href='duzenle.php?id={$row["id"]}'>Düzenle</a>  ";
      echo "<a class='btn btn-danger' href='sil.php?id={$row["id"]}')>Sil</a> ";
-     echo "<a class='btn btn-success' href='arsivle.php?id={$bul["id"]}'>Arşivle</a>";
+     echo "<a class='btn btn-success disabled' href='arsivle.php?id={$row["id"]}'>Arşivle</a>";
      echo "</div>";
      }
 ?>

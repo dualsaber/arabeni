@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-9">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -94,20 +95,22 @@ echo '<div class="container"><form id="myForm" method="POST">
     echo "</div>";
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ara Beni! Alpha</title>
+    <title>Ara Beni! Alpha v0.1</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container center-block"><ul id="nav"><li><a href="ekle" class="btn btn-warning">Ekle</a></li>
+    <div class="container center-block">
+      <a href="http://canagirkaya.com/arabeni/genel.php" class="btn btn-success"><span class="glyphicon glyphicon-refresh"></span></a>
+      <ul id="nav">
+       <li><a href="liste" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span></a></li>
+       <li><a href="ekle" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></a></li>
         <li><a href="liste" class="btn btn-default">Hepsi <span class="badge"><?php echo $toplam; ?></span></a></li>
-        <li><a href="ulasilamadi" class="btn btn-default">Ulaşılamadı <span class="badge"><?php echo $toplam2; ?></span></a></li>
+        <li><a href="ulasilamadi" class="btn btn-default">Ulaşılamadı <span class="badge danger"><?php echo $toplam2; ?></span></a></li>
         <li><a href="arandi" class="btn btn-default">Arandı <span class="badge"><?php echo $toplam3; ?></span></a></li>
         <li><a href="tamamlandi" class="btn btn-default">Tamamlandı <span class="badge"><?php echo $toplam4; ?></span></a></li>
         <li><a href="arsiv" class="btn btn-default">Arşiv <span class="badge"><?php echo $toplam5; ?></span></a></li>
