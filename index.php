@@ -1,5 +1,7 @@
 <?php
 
+
+
 include_once('db.php');
 $result = mysql_query("SELECT * FROM musteriler WHERE arsiv=0 ORDER BY id DESC");
 $result2 = mysql_query("SELECT * FROM musteriler WHERE ulasilamadi=1 ORDER BY id DESC");
