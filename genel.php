@@ -13,6 +13,8 @@ $toplam3 = mysql_num_rows($result3);
 $toplam4 = mysql_num_rows($result4);
 $toplam5 = mysql_num_rows($result5);
 
+$getir = mysql_query("SELECT * FROM version");
+$buldur = mysql_fetch_array($getir);
 
 ?>
 
@@ -22,7 +24,11 @@ $toplam5 = mysql_num_rows($result5);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ara Beni! Alpha v0.1.1</title>
+    <title>Ara Beni! <?php
+
+echo $buldur["num"]." - ".$buldur["release"]." - ".$buldur["name"];
+
+?></title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
