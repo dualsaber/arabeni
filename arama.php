@@ -1,3 +1,5 @@
+<meta http-equiv="Content-Type" content="text/HTML" charset="utf-8" />
+
 <div class="bg-info"><?php
 
 include_once('db.php');
