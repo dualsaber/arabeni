@@ -4,7 +4,7 @@ include_once('db.php');
 
 $kelime = $_POST["kelime"];
 
-$bul = mysql_query("SELECT * FROM musteriler WHERE isim LIKE '%$kelime%' OR soyad LIKE '%$kelime%' OR istek LIKE '%$kelime%' OR telefon LIKE '%$kelime%' OR email LIKE '%$kelime%'");
+$bul = mysql_query("SELECT * FROM musteriler WHERE isim LIKE '%$kelime%' OR soyad LIKE '%$kelime%' OR istek LIKE '%$kelime%' OR telefon LIKE '%$kelime%'");
 $toplam = mysql_num_rows($bul);
 
 if ($toplam > 0 ){
@@ -15,7 +15,6 @@ if ($toplam > 0 ){
             <strong>Soyad:</strong> {$goster["soyad"]}<br />
             <strong>İstek:</strong> {$goster["istek"]}<br />
             <strong>Telefon:</strong> {$goster["telefon"]}<br />
-            <strong>Mail:</strong> {$goster["email"]}<br />
             <strong>Tarih:</strong> {$goster["tarih"]}<br />";
      
     if ($goster["ulasilamadi"] == "1"){
